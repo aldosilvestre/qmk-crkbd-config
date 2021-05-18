@@ -106,42 +106,32 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 /* END QWERTY CONFIG KEYBOARD */
 
 
-/*
-[> DVORAK CONFIG KEYBOARD <]
+/* DVORAK CONFIG KEYBOARD */ 
 // LAYOUT IZQ DEFAULT
-#define ______DVORAK_IZQ_DEFAULT1______
-#define ______DVORAK_IZQ_DEFAULT2______
-#define ______DVORAK_IZQ_DEFAULT3______
+#define ______DVORAK_IZQ_DEFAULT1______ KC_ESC  ,  KC_SCLN,  KC_COMM,  KC_DOT ,  KC_P   ,  KC_Y   ,
+#define ______DVORAK_IZQ_DEFAULT2______ KC_LCTL ,  KC_A   ,  KC_O   ,  KC_E   ,  KC_U   ,  KC_I   ,
+#define ______DVORAK_IZQ_DEFAULT3______ KC_LOC  ,  KC_QUOT,  KC_Q   ,  KC_J   ,  KC_K   ,  KC_X   ,
 
 // LAYOUT DER DEFAULT
-#define ______DVORAK_DER_DEFAULT1______
-#define ______DVORAK_DER_DEFAULT2______
-#define ______DVORAK_DER_DEFAULT3______
+#define ______DVORAK_DER_DEFAULT1______ KC_F    ,  KC_G   , KC_C    , KC_R    , KC_L    , KC_BSPC ,
+#define ______DVORAK_DER_DEFAULT2______ KC_D    ,  KC_H   , KC_T    , KC_N    , KC_S    , KC_SLSH ,
+#define ______DVORAK_DER_DEFAULT3______ KC_B    ,  KC_M   , KC_W    , KC_V    , KC_Z    , KC_RSPC ,
 
 // LAYOUT IZQ LOWER
-#define _______DVORAK_IZQ_LOWER1_______
-#define _______DVORAK_IZQ_LOWER2_______
-#define _______DVORAK_IZQ_LOWER3_______
+#define _______DVORAK_IZQ_LOWER1_______ KC_TAB  , KC_7    , KC_5    , KC_3    , KC_1    , KC_9    ,
 
 // LAYOUT DER LOWER
-#define _______DVORAK_DER_LOWER1_______
-#define _______DVORAK_DER_LOWER2_______
-#define _______DVORAK_DER_LOWER3_______
+#define _______DVORAK_DER_LOWER1_______ KC_0    , KC_2    , KC_4    , KC_6    , KC_8    , KC_PERC ,
 
 // LAYOUT IZQ RAISE
-#define _______DVORAK_IZQ_RAISE1_______
-#define _______DVORAK_IZQ_RAISE2_______
-#define _______DVORAK_IZQ_RAISE3_______
+#define _______DVORAK_IZQ_RAISE1_______ KC_ESC  , KC_EXLM , KC_AT   , KC_HASH , KC_DLR  , KC_PERC ,
 
 // LAYOUT DER RAISE
-#define _______DVORAK_DER_RAISE1_______
-#define _______DVORAK_DER_RAISE2_______
-#define _______DVORAK_DER_RAISE3_______
+#define _______DVORAK_DER_RAISE1_______ KC_CIRC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_DEL  ,
+/* END DVORAK CONFIG KEYBOARD */
 
-[> END DVORAK CONFIG KEYBOARD <]
-*/
 
-// COLEMAK CONFIG KEYBOARD 
+/* COLEMAK CONFIG KEYBOARD */
 // LAYOUT IZQ DEFAULT
 #define _____COLEMAK_IZQ_DEFAULT1______ KC_ESC  ,  KC_Q   ,  KC_W   ,  KC_F   ,  KC_P   ,  KC_B   ,
 #define _____COLEMAK_IZQ_DEFAULT2______ KC_LCTL ,  KC_A   ,  KC_R   ,  KC_S   ,  KC_T   ,  KC_G   ,
@@ -151,6 +141,6 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define _____COLEMAK_DER_DEFAULT1______ KC_J    ,  KC_L   , KC_U    , KC_Y    , KC_SCLN , KC_BSPC ,
 #define _____COLEMAK_DER_DEFAULT2______ KC_M    ,  KC_N   , KC_E    , KC_I    , KC_O    , KC_QUOT ,
 #define _____COLEMAK_DER_DEFAULT3______ KC_K    ,  KC_H   , KC_COMM , KC_DOT  , KC_SLSH , KC_RSPC ,
-// END COLEMAK CONFIG KEYBOARD 
+/* END COLEMAK CONFIG KEYBOARD */
 
 
