@@ -1,13 +1,13 @@
 #include "key_mapping.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [_QWERTY] = LAYOUT_wrapper(
+  [_DEFAULT] = LAYOUT_wrapper(
   //,-----------------------------.            ,-----------------------------.
-    ______QWERTY_IZQ_DEFAULT1______            ______QWERTY_DER_DEFAULT1______
+    _____COLEMAK_IZQ_DEFAULT1______            _____COLEMAK_DER_DEFAULT1______
   //|----+----+----+----+----+----|            |----+----+----+----+----+----|
-    ______QWERTY_IZQ_DEFAULT2______            ______QWERTY_DER_DEFAULT2______
+    _____COLEMAK_IZQ_DEFAULT2______            _____COLEMAK_DER_DEFAULT2______
   //|----+----+----+----+----+----|            |----+----+----+----+----+----|
-    ______QWERTY_IZQ_DEFAULT3______            ______QWERTY_DER_DEFAULT3______
+    _____COLEMAK_IZQ_DEFAULT3______            _____COLEMAK_DER_DEFAULT3______
   //|----+----+----+----+----+----+----|  |----+----+----+----+----+----+----|
                           _FUN_INF_IZQ_     _FUN_INF_DER_
                        //`-------------'  `--------------'
