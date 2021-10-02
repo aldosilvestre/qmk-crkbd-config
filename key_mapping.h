@@ -103,9 +103,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define _______QWERTY_IZQ_RAISE3_______ CAP_LOC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_PIPE ,
 
 // LAYOUT DER RAISE
-#define _______QWERTY_DER_RAISE1_______ KC_PLUS , KC_1    , KC_2    , KC_3    , KC_TILD , KC_DEL  ,
+#define _______QWERTY_DER_RAISE1_______ KC_PLUS , KC_7    , KC_8    , KC_9    , KC_TILD , KC_DEL  ,
 #define _______QWERTY_DER_RAISE2_______ KC_MINS , KC_4    , KC_5    , KC_6    , KC_0    , KC_GRV  ,
-#define _______QWERTY_DER_RAISE3_______ KC_EQL  , KC_7    , KC_8    , KC_9    , KC_UNDS , KC_BSLS ,
+#define _______QWERTY_DER_RAISE3_______ KC_EQL  , KC_1    , KC_2    , KC_3    , KC_UNDS , KC_BSLS ,
 /* END QWERTY CONFIG KEYBOARD */
 
 
