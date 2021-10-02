@@ -34,6 +34,7 @@ enum layers {
 
 enum {
 	TD_CAPLOCK,
+  TD_F10,
 	TD_F11,
 	TD_F12
 };
@@ -41,26 +42,28 @@ enum {
 // Define teclas tap dancing de doble toque
 qk_tap_dance_action_t tap_dance_actions[] = {
     [TD_CAPLOCK] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_CAPS),
-    [TD_F11] = ACTION_TAP_DANCE_DOUBLE(KC_F1, KC_F11),
-    [TD_F12] = ACTION_TAP_DANCE_DOUBLE(KC_F2, KC_F12),
+    [TD_F10] = ACTION_TAP_DANCE_DOUBLE(KC_F1, KC_F10),
+    [TD_F11] = ACTION_TAP_DANCE_DOUBLE(KC_F2, KC_F11),
+    [TD_F12] = ACTION_TAP_DANCE_DOUBLE(KC_F3, KC_F12),
 };
 
 #define LAYOUT_wrapper(...)   LAYOUT(__VA_ARGS__)
 
 #define KC_XXXXX KC_NO
-#define PREV_T KC_MEDIA_PREV_TRACK
+#define PREV_T KC_MRWD
 #define PSCREEN KC_PSCREEN
-#define NEXT_T KC_MEDIA_NEXT_TRACK
+#define NEXT_T KC_MFFD
 #define CAP_LOC TD(TD_CAPLOCK)
+#define TD_F10 TD(TD_F10)
 #define TD_F11 TD(TD_F11)
 #define TD_F12 TD(TD_F12)
 #define RALTENT RALT_T(KC_ENT)
 #define KC_INS KC_INSERT
 
 //botones de funciones inferiores teclado izquierdo
-#define _FUN_INF_IZQ_ KC_LGUI, LOWER, KC_SPC,
+#define _FUN_INF_IZQ_ KC_LGUI  , LOWER, KC_SPC,
 //botones de funciones inferiores teclado derecho
-#define _FUN_INF_DER_ RALTENT , RAISE, KC_LALT
+#define _FUN_INF_DER_ KC_ENTER , RAISE, KC_LALT
 
 //botones layout ADJUST izquierda
 #define __________LY_ADJ_IZQ1__________ RESET   , RGBRST  , KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX,
@@ -85,24 +88,24 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define ______QWERTY_DER_DEFAULT3______ KC_N    ,  KC_M   , KC_COMM , KC_DOT  , KC_SLSH , KC_RSPC ,
 
 // LAYOUT IZQ LOWER
-#define _______QWERTY_IZQ_LOWER1_______ KC_TAB  , KC_1    , KC_2    , KC_3    , KC_4    , KC_5    ,
-#define _______QWERTY_IZQ_LOWER2_______ KC_LCTL , KC_MUTE , KC_VOLD , KC_VOLU , KC_PGUP , KC_PGDN ,
-#define _______QWERTY_IZQ_LOWER3_______ CAP_LOC , TD_F11  , TD_F12  , KC_F3   , KC_F4   , KC_F5   ,
+#define _______QWERTY_IZQ_LOWER1_______ KC_TAB  , TD_F10  , TD_F11  , TD_F12  , KC_HOME , KC_END  ,
+#define _______QWERTY_IZQ_LOWER2_______ KC_LCTL , KC_F4   , KC_F5   , KC_F6   , KC_RALT , KC_XXXXX,
+#define _______QWERTY_IZQ_LOWER3_______ CAP_LOC , KC_F7   , KC_F8   , KC_F9   , KC_PGUP , KC_PGDN ,
 
 // LAYOUT DER LOWER
-#define _______QWERTY_DER_LOWER1_______ KC_6    , KC_7    , KC_8    , KC_9    , KC_0    , KC_BSPC ,
-#define _______QWERTY_DER_LOWER2_______ KC_LEFT , KC_DOWN , KC_UP   , KC_RIGHT, KC_HOME , KC_END  ,
-#define _______QWERTY_DER_LOWER3_______ KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_XXXXX,
+#define _______QWERTY_DER_LOWER1_______ KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_BSPC ,
+#define _______QWERTY_DER_LOWER2_______ KC_LEFT , KC_DOWN , KC_UP   , KC_RIGHT, KC_XXXXX, KC_XXXXX,
+#define _______QWERTY_DER_LOWER3_______ KC_XXXXX, KC_MUTE , KC_VOLD , KC_VOLU , KC_XXXXX, KC_XXXXX,
 
 // LAYOUT IZQ RAISE
-#define _______QWERTY_IZQ_RAISE1_______ KC_ESC  , KC_EXLM , KC_AT   , KC_HASH , KC_DLR  , KC_PERC ,
-#define _______QWERTY_IZQ_RAISE2_______ KC_LCTL , KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX,
-#define _______QWERTY_IZQ_RAISE3_______ CAP_LOC , KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX, KC_XXXXX,
+#define _______QWERTY_IZQ_RAISE1_______ KC_ESC  , KC_EXLM , KC_AT   , KC_HASH , KC_LBRC , KC_RBRC ,
+#define _______QWERTY_IZQ_RAISE2_______ KC_LCTL , KC_DLR  , KC_PERC , KC_CIRC , KC_LCBR , KC_RCBR ,
+#define _______QWERTY_IZQ_RAISE3_______ CAP_LOC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_PIPE ,
 
 // LAYOUT DER RAISE
-#define _______QWERTY_DER_RAISE1_______ KC_CIRC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_DEL  ,
-#define _______QWERTY_DER_RAISE2_______ KC_MINS , KC_EQL  , KC_LCBR , KC_RCBR , KC_PIPE , KC_GRV  ,
-#define _______QWERTY_DER_RAISE3_______ KC_UNDS , KC_PLUS , KC_LBRC , KC_RBRC , KC_BSLS , KC_TILD ,
+#define _______QWERTY_DER_RAISE1_______ KC_PLUS , KC_1    , KC_2    , KC_3    , KC_TILD , KC_DEL  ,
+#define _______QWERTY_DER_RAISE2_______ KC_MINS , KC_4    , KC_5    , KC_6    , KC_0    , KC_GRV  ,
+#define _______QWERTY_DER_RAISE3_______ KC_EQL  , KC_7    , KC_8    , KC_9    , KC_UNDS , KC_BSLS ,
 /* END QWERTY CONFIG KEYBOARD */
 
 
