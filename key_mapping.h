@@ -98,9 +98,9 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 #define _______QWERTY_DER_LOWER3_______ KC_XXXXX, KC_MUTE , KC_VOLD , KC_VOLU , KC_XXXXX, KC_XXXXX,
 
 // LAYOUT IZQ RAISE
-#define _______QWERTY_IZQ_RAISE1_______ KC_ESC  , KC_EXLM , KC_AT   , KC_HASH , KC_LBRC , KC_RBRC ,
+#define _______QWERTY_IZQ_RAISE1_______ KC_ESC  , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_PIPE ,
 #define _______QWERTY_IZQ_RAISE2_______ KC_LCTL , KC_DLR  , KC_PERC , KC_CIRC , KC_LCBR , KC_RCBR ,
-#define _______QWERTY_IZQ_RAISE3_______ CAP_LOC , KC_AMPR , KC_ASTR , KC_LPRN , KC_RPRN , KC_PIPE ,
+#define _______QWERTY_IZQ_RAISE3_______ CAP_LOC , KC_EXLM , KC_AT   , KC_HASH , KC_LBRC , KC_RBRC ,
 
 // LAYOUT DER RAISE
 #define _______QWERTY_DER_RAISE1_______ KC_PLUS , KC_7    , KC_8    , KC_9    , KC_TILD , KC_DEL  ,

@@ -24,3 +24,6 @@ Funcionalidades:
 3. Shift --> Bloq Mayus
 * Tecla Enter de doble funcion, al mantener presionado se convierte en AltGr
 * El Shift derecho es al mantener presionado, en todo caso solo es el simbolo ')'
+
+##Commit de QMK repo donde no presenta falla la pantalla secundaria
+c32264d9b7382e86c7df75edfe3bc4154d714e25

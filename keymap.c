@@ -407,11 +407,12 @@ void render_status_secondary(void) {
     render_logo();
     render_space();
     render_logger();
-    //render_layer_state();
     render_space();
     render_keylogger_status();
-    //render_mod_status_gui_alt(get_mods()|get_oneshot_mods());
-    //render_mod_status_ctrl_shift(get_mods()|get_oneshot_mods());
+}
+
+void suspend_power_down_user(){
+  oled_off();
 }
 
 void oled_task_user(void) {
