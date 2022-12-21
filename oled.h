@@ -1,13 +1,13 @@
 #pragma once
-
+#include "keylogger.h"
 #include <stdio.h>
 
-#ifdef OLED_VERTICAL
-#define KEYLOG_LEN (49)
-#else
-#define KEYLOG_LEN (38)
-#endif
 
-#define KEYLOG_EOL_LEN (KEYLOG_LEN+1)
-
-extern void add_keylog(uint16_t keycode);
+void render_status_main(void);
+void render_status_secondary(void);
+void render_space(void);
+void render_mod_status_gui_alt(uint8_t modifiers);
+void render_mod_status_ctrl_shift(uint8_t modifiers);
+void render_logo(void);
+void render_logger(void);
+void render_layer_state(void);
