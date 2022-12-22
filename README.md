@@ -23,7 +23,6 @@ Funcionalidades:
 1. Indicador de boton funcion presionado (Ctrl, Alt, Super/ Command, Shift)
 2. Indicador de capa activa (LOWER, RAISE, ADJUST, DEFAULT).
 
-* Agregado keylogger en mano izquierda configurable en oled.h
 * Indicador de Bloqueo mayuscula por color de teclado (Verde).
 * Teclas con tap dance de doble toque.
 
@@ -35,3 +34,5 @@ Funcionalidades:
 * El Shift derecho es al mantener presionado, en todo caso solo es el simbolo ')' --> teclado derecho
 
 **NOTA:** *actualmente se tiene como teclado master el Derecho.*
+
+**TODO:** *Se quito el keylogger del lado izquierdo, es posteriores versiones se agregará nuevamente( se tiene lo mismo en ambas pantallas).*
