@@ -13,17 +13,17 @@
 
 Funcionalidades:
 
-* Se utilizaa formato de pantalla de soundmonster para el oled izquierdo.
+* Se utilizaa formato de pantalla de soundmonster para el oled.
 1. Indicador de boton funcion presionado (Ctrl, Alt, Super/ Command, Shift)
 2. Indicador de capa activa (LOWER, RAISE, ADJUST, DEFAULT).
+
 * Agregado keylogger en mano izquierda configurable en oled.h
-* Indicador de Bloqueo mayuscula por color de teclado master.
+* Indicador de Bloqueo mayuscula por color de teclado (Verde).
 * Teclas con tap dance de doble toque.
+
 1. F1 --> F11
 2. F2 --> F12
 3. Shift --> Bloq Mayus
-* Tecla Enter de doble funcion, al mantener presionado se convierte en AltGr
+
 * El Shift derecho es al mantener presionado, en todo caso solo es el simbolo ')'
 
-## Commit de QMK repo donde no presenta falla la pantalla secundaria
-c32264d9b7382e86c7df75edfe3bc4154d714e25
