@@ -27,9 +27,11 @@ Funcionalidades:
 * Indicador de Bloqueo mayuscula por color de teclado (Verde).
 * Teclas con tap dance de doble toque.
 
-1. F1 --> F11
-2. F2 --> F12
-3. Shift --> Bloq Mayus
+1. F1 --> F10
+2. F2 --> F11
+3. F3 --> F12
+4. Shift --> Bloq Mayus
 
-* El Shift derecho es al mantener presionado, en todo caso solo es el simbolo ')'
+* El Shift derecho es al mantener presionado, en todo caso solo es el simbolo ')' --> teclado derecho
 
+**NOTA:** *actualmente se tiene como teclado master el Derecho.*
