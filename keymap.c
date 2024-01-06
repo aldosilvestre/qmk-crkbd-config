@@ -1,5 +1,6 @@
 #include "key_mapping.h"
 #include QMK_KEYBOARD_H
+#define SPLIT_LED_STATE_ENABLE
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_DEFAULT] = LAYOUT_wrapper(
@@ -83,7 +84,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
   #if defined(RGB_MATRIX_ENABLE)
-		if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
+		if (host_keyboard_led_state().caps_lock) {
 			rgb_matrix_set_color_all(0,255,0);
 		}
 		/* switch (biton32(layer_state)) {

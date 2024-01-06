@@ -2,7 +2,7 @@
 #include QMK_KEYBOARD_H
 
 enum custom_keycodes {
-  QWERTY = SAFE_RANGE,
+  QWERTY,
   LOWER,
   RAISE,
   ADJUST

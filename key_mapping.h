@@ -31,7 +31,7 @@
 // LAYOUT DER DEFAULT
 #define ______QWERTY_DER_DEFAULT1______ KC_Y    ,  KC_U   , KC_I    , KC_O    , KC_P    , KC_BSPC ,
 #define ______QWERTY_DER_DEFAULT2______ KC_H    ,  KC_J   , KC_K    , KC_L    , KC_SCLN , KC_QUOT ,
-#define ______QWERTY_DER_DEFAULT3______ KC_N    ,  KC_M   , KC_COMM , KC_DOT  , KC_SLSH , KC_RSPC ,
+#define ______QWERTY_DER_DEFAULT3______ KC_N    ,  KC_M   , KC_COMM , KC_DOT  , KC_SLSH , SC_RSPC ,
 
 // LAYOUT IZQ LOWER
 #define _______QWERTY_IZQ_LOWER1_______ KC_TAB  , F10_TD  , F11_TD  , F12_TD  , KC_HOME , KC_END  ,
